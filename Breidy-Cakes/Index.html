@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breidy’s Cakes</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🎂 ¡Bienvenido a Breidy’s Cakes! 🎂</h1>
+        <p>“Donde cada mordida cuenta una dulce historia de felicidad.”</p>
+    </header>
+
+    <!-- SECCIÓN DE PASTELES -->
+    <section>
+        <h2>Nuestros Pasteles</h2>
+        <p>Ofrecemos los siguientes pasteles con sus precios:</p>
+
+        <div class="pasteles">
+            <div class="pastel">
+                <img src="Imagenes/fresa.jpg" alt="Pastel de Fresa">
+                <p>Pastel de Fresa - $15</p>
+            </div>
+            <div class="pastel">
+                <img src="Imagenes/chocolate.jpg" alt="Pastel de Chocolate">
+                <p>Pastel de Chocolate - $20</p>
+            </div>
+            <div class="pastel">
+                <img src="Imagenes/vainilla.jpg" alt="Pastel de Vainilla">
+                <p>Pastel de Vainilla - $18</p>
+            </div>
+            <div class="pastel">
+                <img src="Imagenes/tematico.jpg" alt="Pastel Temático">
+                <p>Pastel Temático - $25</p>
+            </div>
+            <div class="pastel">
+                <img src="Imagenes/boda.jpg" alt="Pastel de Bodas">
+                <p>Pastel de Bodas - $30</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PEDIDOS -->
+    <section>
+        <h2>Haz tu Pedido</h2>
+        <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
+
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="tipo">Tipo de Pastel:</label><br>
+            <select name="tipo" id="tipo">
+                <option>Fresa - $15</option>
+                <option>Chocolate - $20</option>
+                <option>Vainilla - $18</option>
+                <option>Temático - $25</option>
+                <option>Bodas - $30</option>
+            </select><br><br>
+
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="number" name="cantidad" id="cantidad" min="1" value="1" required><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Enviar Pedido">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Breidy’s Cakes - Todos los derechos reservados</p>
+        <p>Contacto: info@breidyscakes.com | Tel: +1 809 123 4567</p>
+        <p>Síguenos en:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">WhatsApp</a>
+        </p>
+    </footer>
+
+</body>
+</html>

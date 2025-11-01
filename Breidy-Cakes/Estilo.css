@@ -1,0 +1,178 @@
+/* ================================================== */
+/* ESTILOS GENERALES */
+/* ================================================== */
+body {
+    /* Fuente legible para toda la página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Color de fondo suave */
+    background-color: #fff5f5;
+
+    /* Sin márgenes ni padding por defecto */
+    margin: 0;
+    padding: 0;
+
+    /* Color de texto base */
+    color: #333;
+}
+
+/* ================================================== */
+/* HEADER */
+/* ================================================== */
+header {
+    /* Fondo llamativo */
+    background-color: #FA8072;
+
+    /* Color del texto */
+    color: black;
+
+    /* Centrar contenido */
+    text-align: center;
+
+    /* Espaciado interno */
+    padding: 20px;
+
+    /* Texto en negrita */
+    font-weight: bold;
+
+    /* Bordes redondeados */
+    border-radius: 15px;
+
+    /* Margen externo */
+    margin: 20px;
+}
+
+/* ================================================== */
+/* SECCIONES */
+/* ================================================== */
+section {
+    /* Fondo de sección */
+    background-color: #ffe4e1;
+
+    /* Bordes redondeados */
+    border-radius: 15px;
+
+    /* Espaciado interno */
+    padding: 20px;
+
+    /* Margen externo */
+    margin: 20px;
+}
+
+h2 {
+    /* Color del subtítulo */
+    color: #c0392b;
+}
+
+/* ================================================== */
+/* FORMULARIO */
+/* ================================================== */
+form {
+    /* Fondo del formulario */
+    background-color: #fff0f0;
+
+    /* Espaciado interno */
+    padding: 15px;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Ancho máximo */
+    max-width: 450px;
+
+    /* Centrar el formulario */
+    margin: 0 auto;
+
+    /* Sombra ligera */
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs, selects y textareas */
+input, select, textarea {
+    width: 100%;               /* Ocupa todo el ancho del formulario */
+    padding: 8px;              /* Espaciado interno */
+    margin-top: 5px;           /* Espaciado arriba */
+    margin-bottom: 15px;       /* Espaciado abajo */
+    border-radius: 5px;        /* Bordes redondeados */
+    border: 1px solid #ccc;    /* Borde gris claro */
+    box-sizing: border-box;    /* Incluye padding en el ancho */
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    background-color: #FA8072; /* Color de fondo */
+    color: white;              /* Color del texto */
+    padding: 10px;             /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cursor de puntero */
+    font-weight: bold;         /* Texto en negrita */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+input[type="submit"]:hover {
+    background-color: #e06b61; /* Cambio de color al hover */
+}
+
+/* ================================================== */
+/* FOOTER */
+/* ================================================== */
+footer {
+    background-color: #FA8072; /* Fondo igual que header */
+    color: white;              /* Texto blanco */
+    text-align: center;        /* Centrar contenido */
+    padding: 15px;             /* Espaciado interno */
+    border-radius: 15px 15px 0 0; /* Bordes redondeados arriba */
+    margin-top: 30px;          /* Espacio superior */
+    font-size: 14px;           /* Tamaño de fuente pequeño */
+}
+
+/* Enlaces dentro del footer */
+footer a {
+    color: white;              /* Color del enlace */
+    text-decoration: none;     /* Sin subrayado */
+    font-weight: bold;         /* Negrita */
+}
+
+/* Hover de los enlaces */
+footer a:hover {
+    color: #ffe4e1;            /* Color al pasar el mouse */
+}
+
+/* ================================================== */
+/* PASTELES CON IMAGENES */
+/* ================================================== */
+.pasteles {
+    display: flex;             /* Mostrar tarjetas en fila */
+    flex-wrap: wrap;           /* Permitir que se muevan a la siguiente línea */
+    justify-content: space-around; /* Espacio uniforme entre tarjetas */
+    gap: 20px;                 /* Separación entre tarjetas */
+    margin-top: 20px;          /* Margen superior */
+}
+
+.pastel {
+    text-align: center;        /* Centrar texto dentro de la tarjeta */
+    max-width: 180px;          /* Ancho máximo de cada tarjeta */
+    background-color: #fff0f0; /* Fondo suave */
+    padding: 10px;             /* Espaciado interno */
+    border-radius: 10px;       /* Bordes redondeados */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+
+    /* TRANSICIÓN para zoom suave del cuadro completo */
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+/* Efecto hover sobre toda la tarjeta */
+.pastel:hover {
+    transform: scale(1.1); /* Aumenta 10% */
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.2); /* Sombra más marcada */
+}
+
+.pastel img {
+    width: 100%;               /* Imagen ocupa todo el ancho de la tarjeta */
+    height: 150px;             /* Altura fija para todas las imágenes */
+    object-fit: cover;         /* Mantener proporción y recortar si es necesario */
+    border-radius: 10px;       /* Bordes redondeados */
+    margin-bottom: 8px;        /* Espacio debajo de la imagen */
+    /* No necesita hover individual, ahora lo hace el cuadro completo */
+}
