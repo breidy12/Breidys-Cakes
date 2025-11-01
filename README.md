@@ -5,6 +5,12 @@ El sitio incluye una galería de productos con imágenes, precios, un formulario
 
 ---
 
+## 📷 Captura del proyecto
+<img width="1326" height="572" alt="image" src="https://github.com/user-attachments/assets/fdd6cdb5-7743-4a52-818f-474d694e45bc" />
+<img width="1323" height="616" alt="image" src="https://github.com/user-attachments/assets/6178e4ff-004d-4240-8920-ec1c367fcb8e" />
+
+---
+
 ## ✨ Características
 - 🧁 Sección de presentación con bienvenida y eslogan.  
 - 🍰 Galería de pasteles con imágenes y precios.  
